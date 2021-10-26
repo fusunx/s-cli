@@ -1,20 +1,23 @@
 {
-  "name": "@s-cli/utils",
-  "version": "1.0.4",
-  "description": "> TODO: description",
-  "author": "sunxianfu <1102654482@qq.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/utils.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "gitHead": "6925cd385805eeac03962ad54a1c60c0c46b4ee1"
+    "name": "@s-cli/utils",
+    "version": "1.0.4",
+    "description": "> TODO: description",
+    "author": "sunxianfu <1102654482@qq.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "lib/utils.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "gitHead": "81edacfae3c12d5f93e36455c3ab8ba18d2bb3f8",
+    "publishConfig": {
+        "access": "public"
+    }
 }
