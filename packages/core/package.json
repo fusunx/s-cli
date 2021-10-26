@@ -1,20 +1,23 @@
 {
-  "name": "@s-cli/core",
-  "version": "1.0.2",
-  "description": "s-cli core",
-  "author": "sunxianfu <1102654482@qq.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/core.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "gitHead": "45a9d38dea08d8473be32ac92b3abe2f64a43779"
+    "name": "@s-cli/core",
+    "version": "1.0.2",
+    "description": "s-cli core",
+    "author": "sunxianfu <1102654482@qq.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "lib/core.js",
+    "bin": {
+        "s-cli": "bin/index.js"
+    },
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "gitHead": "202a85d58ad52f765e466a84e903aced3fbe389a"
 }
