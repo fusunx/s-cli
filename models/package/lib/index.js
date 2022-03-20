@@ -81,7 +81,7 @@ class Package {
     }
 
     // 更新 Package
-    update() {
+    async update() {
         await this.prepare();
         // 获取最新的 npm 模块版本号
         const latestPackageVersion = await getNpmLatestVersion(this.packageName);

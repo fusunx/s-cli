@@ -25,5 +25,9 @@
   },
   "bugs": {
     "url": "https://github.com/fusunx/s-cli/issues"
+  },
+  "dependencies": {
+    "@s-cli/command": "file:../../models/command",
+    "@s-cli/log": "file:../../utils/log"
   }
 }

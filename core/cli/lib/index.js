@@ -25,9 +25,6 @@ async function core() {
         registerCommand();
     } catch (e) {
         npmlog.error(e.message);
-        if (program.debug) {
-            console.log(e);
-        }
     }
 }
 
@@ -74,7 +71,6 @@ function registerCommand() {
 }
 
 async function prepare() {
-    checkNodeVersion();
     checkRoot();
     checkUserHome();
     checkEnv();
@@ -130,14 +126,4 @@ function checkUserHome() {
 function checkRoot() {
     const rootCheck = require('root-check');
     rootCheck();
-}
-
-function checkNodeVersion() {
-    // 获取当前 Node 版本号
-    const currentVersion = process.version;
-    const lowestVersion = constant.LOWEST_NODE_VERSION;
-    // 比对最低版本号
-    if (!semver.gte(currentVersion, lowestVersion)) {
-        throw new Error(colors.red(`s-cli 需要安装 v${lowestVersion} 以上版本的 Node.js`));
-    }
 }
