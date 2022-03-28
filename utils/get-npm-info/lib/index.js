@@ -21,7 +21,8 @@ function getNpmInfo(npmName, registry) {
             }
         })
         .catch((e) => {
-            return Peomise.reject(e);
+            console.log('error: ', npmInfoUrl, npmName);
+            return Promise.reject(e);
         });
 }
 

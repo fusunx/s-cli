@@ -25,5 +25,12 @@
   },
   "bugs": {
     "url": "https://github.com/fusunx/s-cli/issues"
+  },
+  "dependencies": {
+    "@s-cli/command": "file:../../models/command",
+    "@s-cli/log": "file:../../utils/log",
+    "fs-extra": "^10.0.1",
+    "inquirer": "^8.2.2",
+    "semver": "^7.3.5"
   }
 }

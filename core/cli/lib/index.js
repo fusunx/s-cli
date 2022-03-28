@@ -12,10 +12,7 @@ const commander = require('commander');
 
 const pkg = require('../package.json');
 const constant = require('./const');
-const init = require('@s-cli/init');
 const exec = require('@s-cli/exec');
-
-let config;
 
 const program = new commander.Command();
 
@@ -25,9 +22,6 @@ async function core() {
         registerCommand();
     } catch (e) {
         npmlog.error(e.message);
-        if (program.debug) {
-            console.log(e);
-        }
     }
 }
 
@@ -69,12 +63,10 @@ function registerCommand() {
 
     if (program.args && program.args.length < 1) {
         program.outputHelp();
-        console.log();
     }
 }
 
 async function prepare() {
-    checkNodeVersion();
     checkRoot();
     checkUserHome();
     checkEnv();
@@ -130,14 +122,4 @@ function checkUserHome() {
 function checkRoot() {
     const rootCheck = require('root-check');
     rootCheck();
-}
-
-function checkNodeVersion() {
-    // 获取当前 Node 版本号
-    const currentVersion = process.version;
-    const lowestVersion = constant.LOWEST_NODE_VERSION;
-    // 比对最低版本号
-    if (!semver.gte(currentVersion, lowestVersion)) {
-        throw new Error(colors.red(`s-cli 需要安装 v${lowestVersion} 以上版本的 Node.js`));
-    }
 }

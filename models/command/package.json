@@ -1,7 +1,7 @@
 {
-  "name": "@s-cli/package",
+  "name": "@s-cli/command",
   "version": "1.0.0",
-  "description": "s-cli npm modules",
+  "description": "> TODO: description",
   "author": "fusunx <1102654482@qq.com>",
   "homepage": "https://github.com/fusunx/s-cli#readme",
   "license": "ISC",
@@ -27,12 +27,8 @@
     "url": "https://github.com/fusunx/s-cli/issues"
   },
   "dependencies": {
-    "@s-cli/format-path": "file:../../utils/format-path",
-    "@s-cli/get-npm-info": "file:../../utils/get-npm-info",
-    "@s-cli/utils": "file:../../utils/utils",
-    "fs-extra": "^10.0.0",
-    "npminstall": "^5.3.1",
-    "path-exists": "^4.0.0",
-    "pkg-dir": "^5.0.0"
+    "@s-cli/log": "file:../../utils/log",
+    "colors": "^1.4.0",
+    "semver": "^7.3.5"
   }
 }
