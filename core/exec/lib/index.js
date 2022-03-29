@@ -10,6 +10,7 @@ const SETTINGS = {
 };
 
 const CACHE_DIR = 'dependencies';
+// test你好，孙先富
 
 async function exec() {
     const homePath = process.env.CLI_HOME_PATH;
@@ -65,7 +66,6 @@ async function exec() {
         args.push(o);
 
         let code = `require('${rootFile}').call(null, ${JSON.stringify(args)})`;
-
         const child = spawn('node', ['-e', code], {
             pwd: process.cwd(),
             stdio: 'inherit',
