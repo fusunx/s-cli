@@ -1,7 +1,7 @@
 {
-  "name": "@s-cli/init",
+  "name": "@s-cli/request",
   "version": "1.0.0",
-  "description": "command init",
+  "description": "> TODO: description",
   "author": "fusunx <1102654482@qq.com>",
   "homepage": "https://github.com/fusunx/s-cli#readme",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -27,17 +27,6 @@
     "url": "https://github.com/fusunx/s-cli/issues"
   },
   "dependencies": {
-    "@s-cli/command": "file:../../models/command",
-    "@s-cli/log": "file:../../utils/log",
-    "@s-cli/package": "file:../../models/package",
-    "@s-cli/request": "file:../../utils/request",
-    "@s-cli/utils": "file:../../utils/utils",
-    "ejs": "^3.1.6",
-    "fs-extra": "^10.0.1",
-    "glob": "^8.0.1",
-    "inquirer": "^8.2.2",
-    "kebab-case": "^1.0.1",
-    "semver": "^7.3.5",
-    "user-home": "^3.0.0"
+    "axios": "^0.26.1"
   }
 }

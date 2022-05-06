@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@s-cli/package": "file:../../models/package",
-    "@s-cli/log": "file:../../utils/log"
-
+    "@s-cli/log": "file:../../utils/log",
+    "@s-cli/utils": "file:../../utils/utils"
   }
 }

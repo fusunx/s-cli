@@ -21,9 +21,14 @@
   "resolved" "file:../../commands/init"
   "version" "1.0.0"
   dependencies:
+    "@s-cli/command" "file:../../models/command"
+    "@s-cli/log" "file:../../utils/log"
+    "@s-cli/package" "file:../../models/package"
+    "@s-cli/request" "file:../../utils/request"
     "fs-extra" "^10.0.1"
     "inquirer" "^8.2.2"
     "semver" "^7.3.5"
+    "user-home" "^3.0.0"
 
 "@s-cli/log@file:../../utils/log":
   "resolved" "file:../../utils/log"
